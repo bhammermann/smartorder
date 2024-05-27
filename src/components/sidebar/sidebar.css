@@ -1,0 +1,32 @@
+.SidebarButton {
+    position: sticky;
+    top: 0;
+    
+}
+
+.Headerbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+
+}
+
+.button {
+    float: left;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.name {
+    margin-bottom: 1%;
+    margin-top: 1.5%;
+
+
+}
+
+.avatar {
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

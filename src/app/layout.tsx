@@ -5,6 +5,9 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { ThemeProvider } from "@/components/theme-provider";
 import CssBaseline from '@mui/material/CssBaseline';
 import { ModeToggle } from "@/components/mode-toggle";
+import Sidebar from "@/components/sidebar/sidebar";
+import { Menu, Sheet } from "lucide-react";
+import Menubar2 from "@/components/sidebar/menubar"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
         <body className={inter.className}>
-        <ModeToggle />
+        <Sidebar/>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -25,6 +28,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
         </body>
+        <Menubar2/>
       </AppRouterCacheProvider>
     </html>
   );

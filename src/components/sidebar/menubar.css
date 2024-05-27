@@ -1,0 +1,29 @@
+.menubar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+}
+
+.first {
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+.second {
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.third {
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.fourth {
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
