@@ -17,12 +17,15 @@ export default function Home() {
   return (
     <div className="home">
       <div>
-        <h1 className="text">What would you like to order?What would you like to order?</h1>
+        <h1 className="text">What would you like to order?</h1>
       </div>
       <div className="flex w-full max-w-sm items-center space-x-2">
-        <Button type="submit" size="icon"> <Search />
+        <Button type="submit" size="icon">
+          <Search />
         </Button>
-        <Input type="email" id="email" placeholder="Search for food ..."></Input>
+        <div className="p-2">
+          <Input type="email" id="email" placeholder="Search for food ..." />
+        </div>
       </div>
     </div>
   );

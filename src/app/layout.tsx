@@ -25,10 +25,11 @@ export default function RootLayout({
             attribute="class"
             defaultTheme="system"
         >
+            <ModeToggle />
           {children}
         </ThemeProvider>
-        </body>
         <Menubar2/>
+        </body>
       </AppRouterCacheProvider>
     </html>
   );

@@ -12,8 +12,10 @@ function Products() {
 
     return (
         <div className="home">
-            <div>Products</div>
             <div>
+                <h1 className="p-2">Products</h1>
+            </div>
+            <div className='p-2'>
                 {products.map((product:any) => (
                     <div key={product._id}>
                         {product.name}
