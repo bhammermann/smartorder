@@ -1,39 +1,52 @@
-import {
-    Menubar,
-    MenubarCheckboxItem,
-    MenubarContent,
-    MenubarItem,
-    MenubarMenu,
-    MenubarRadioGroup,
-    MenubarRadioItem,
-    MenubarSeparator,
-    MenubarShortcut,
-    MenubarSub,
-    MenubarSubContent,
-    MenubarSubTrigger,
-    MenubarTrigger,
-  } from "@/components/ui/menubar"
-import { Home } from "lucide-react"
-import { Button } from "../ui/button"
 import "./menubar.css";
-  
-  export default function Menubar2() {
-    return (
 
-    <div className="menubar">
-        <div className="first">
-          <Button size="icon"><Home /></Button>
-          </div>
-          <div className="second">
-          <Button size="icon"><Home /></Button>
-          </div>
-          <div className="third">
-          <Button size="icon"><Home /></Button>
-          </div>
-          <div className="fourth">
-          <Button size="icon"><Home /></Button>
-          </div>
-      </div>
-    )
-  }
-  
+export default function Menubar2() {
+  return (
+    <div className="btm-nav">
+      <button className="text-primary">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={32}
+          height={32}
+          viewBox="0 0 256 256"
+        >
+          <path
+            fill="currentColor"
+            d="m219.31 108.68l-80-80a16 16 0 0 0-22.62 0l-80 80A15.87 15.87 0 0 0 32 120v96a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-56h32v56a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-96a15.87 15.87 0 0 0-4.69-11.32M208 208h-48v-56a8 8 0 0 0-8-8h-48a8 8 0 0 0-8 8v56H48v-88l80-80l80 80Z"
+          ></path>
+        </svg>
+      </button>
+      <button className="text-primary active">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width={32}
+          height={32}
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            fillRule="evenodd"
+            d="M12 2.75a9.25 9.25 0 1 0 0 18.5a9.25 9.25 0 0 0 0-18.5M1.25 12C1.25 6.063 6.063 1.25 12 1.25S22.75 6.063 22.75 12S17.937 22.75 12 22.75S1.25 17.937 1.25 12m12.599-2.819c-.605.16-1.42.485-2.595.955c-.541.217-.642.268-.716.333a.758.758 0 0 0-.07.069c-.064.074-.115.175-.332.716c-.47 1.175-.794 1.99-.955 2.595c-.167.63-.085.79-.059.83a.75.75 0 0 0 .2.198c.038.027.199.108.829-.059c.605-.16 1.42-.484 2.594-.954c.542-.217.643-.268.717-.333l.494.564l-.494-.564a.733.733 0 0 0 .07-.07l.563.495l-.564-.494c.065-.074.116-.175.333-.717c.47-1.174.794-1.99.954-2.594c.168-.63.086-.791.06-.83a.75.75 0 0 0-.2-.199c-.038-.026-.2-.108-.83.06m-.384-1.45c.69-.183 1.436-.271 2.057.15c.234.16.437.362.596.597c.422.621.333 1.367.15 2.057c-.186.704-.546 1.605-.991 2.717l-.02.05l-.034.084c-.163.41-.308.772-.564 1.065a2.248 2.248 0 0 1-.208.208c-.293.256-.655.4-1.065.564l-.083.033l-.279-.696l.279.697l-.05.02c-1.113.445-2.014.805-2.718.991c-.69.183-1.436.272-2.057-.15l.422-.62l-.422.62a2.25 2.25 0 0 1-.596-.596c-.422-.621-.334-1.368-.15-2.057c.186-.705.546-1.605.991-2.717l.02-.05l.034-.085c.163-.41.307-.771.564-1.064c.065-.074.134-.143.208-.208c.293-.257.655-.401 1.064-.564l.084-.034l.05-.02c1.113-.445 2.013-.805 2.718-.992"
+            clipRule="evenodd"
+          ></path>
+        </svg>
+      </button>
+     
+        <button className="text-primary">
+        <div className="indicator">   
+        <span className="indicator-item badge badge-secondary">5</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={32}
+            height={32}
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M17 18a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2M1 2h3.27l.94 2H20a1 1 0 0 1 1 1c0 .17-.05.34-.12.5l-3.58 6.47c-.34.61-1 1.03-1.75 1.03H8.1l-.9 1.63l-.03.12a.25.25 0 0 0 .25.25H19v2H7a2 2 0 0 1-2-2c0-.35.09-.68.24-.96l1.36-2.45L3 4H1zm6 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2c0-1.11.89-2 2-2m9-7l2.78-5H6.14l2.36 5z"
+            ></path>
+          </svg></div>
+        </button>
+    </div>
+  );
+}

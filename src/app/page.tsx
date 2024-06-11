@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 import { Input } from "@/components/ui/input";
 import "./home.css"
 import { Button } from "@/components/ui/button";
+import Carousel from "@/components/sidebar/carousel";
 /* import SearchIcon from '@mui/icons-material/Search'; */
 
 
@@ -27,6 +28,8 @@ export default function Home() {
           <Input type="email" id="email" placeholder="Search for food ..." />
         </div>
       </div>
+      <div><h1 className="text">Popular Items</h1></div>
+      <div><Carousel/></div>
     </div>
   );
 }
