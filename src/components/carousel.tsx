@@ -1,4 +1,4 @@
-import "./carousel.css";
+import "/src/styles/carousel.css";
 
 export default function Carousel() {
     return (
