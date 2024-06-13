@@ -2,7 +2,7 @@ import "/src/styles/carousel.css";
 
 export default function Carousel() {
     return (
-<div className="carousel carousel-center max-w-300 p-4 space-x-4 bg-neutral rounded-box">
+<div className="carousel carousel-center max-w-300 p-4 space-x-4 bg-background rounded-box">
   <div className="carousel-item">
     <img src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" className="rounded-box" />
   </div> 

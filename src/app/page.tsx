@@ -13,17 +13,17 @@ export default function Home() {
   return (
     <div className="home">
       <div>
-        <h1 className="text">What would you like to order?</h1>
+        <strong className="text">What would you like to order?</strong>
       </div>
       <div className="flex w-full max-w-sm items-center space-x-2">
         <button type="submit">
           <Search />
         </button>
-        <div className="input input-bordered w-full max-w-xs">
-          <input type="text" placeholder="Search for food ..." />
+        <div className="p-2">
+          <input type="text" placeholder="Search ..." className="input input-bordered w-full max-w-xs bg-background" />
         </div>
       </div>
-      <div><h1 className="text">Popular Items</h1></div>
+      <div className="p-2"><b className="text">Popular Items</b></div>
       <div><Carousel/></div>
     </div>
   );

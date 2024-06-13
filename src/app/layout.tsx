@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-        <body className={inter.className}>
+       <body className={`${inter.className} bg-background`}>
         <Sidebar/>
         <Menubar2/>
         <div className="flex flex-col h-screen">
