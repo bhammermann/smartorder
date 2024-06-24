@@ -9,14 +9,14 @@ export default function Sidebar() {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-background rounded-box w-52">
-            <li><a>Homepage</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>About</a></li>
+            <li><a href="/">Homepage</a></li>
+            <li><a href="http://localhost:3000/products">Products</a></li>
+            <li><a href="/about">About</a></li>
           </ul>
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost text-xl">SmartServe</a>
+        <a href="http://localhost:3000" className="btn btn-ghost text-xl">SmartServe</a>
       </div>
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">
@@ -34,7 +34,7 @@ export default function Sidebar() {
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </label>
       </div>
-  </div>
+    </div>
   );
 }
 
