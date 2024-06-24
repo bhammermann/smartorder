@@ -4,7 +4,6 @@ import "@/styles/globals.css";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import CssBaseline from '@mui/material/CssBaseline';
 import Sidebar from "@/components/sidebar";
-import { Menu, Sheet } from "lucide-react";
 import Menubar2 from "@/components/menubar"
 
 const inter = Inter({ subsets: ["latin"] });

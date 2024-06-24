@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-import { Moon, Search, Sun } from "lucide-react"
 
 import "./home.css"
 import Carousel from "@/components/carousel";

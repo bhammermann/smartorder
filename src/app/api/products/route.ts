@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import Pizza from "@/lib/models/pizza";
 import getModel from "@/lib/models/product";
-import { Pi } from "lucide-react";
 
 
 export const revalidate = 0
