@@ -1,8 +1,8 @@
-import "./menubar.css";
+import "/src/styles/menubar.css";
 
 export default function Menubar2() {
   return (
-    <div className="btm-nav">
+    <div className="btm-nav bg-background">
       <button className="text-primary">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ export default function Menubar2() {
           ></path>
         </svg>
       </button>
-      <button className="text-primary active">
+      <button className="text-primary">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width={32}

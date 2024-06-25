@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/styles/globals.css";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
-import { ThemeProvider } from "@/components/theme-provider";
 import CssBaseline from '@mui/material/CssBaseline';
-import { ModeToggle } from "@/components/mode-toggle";
-import Sidebar from "@/components/sidebar/sidebar";
-import { Menu, Sheet } from "lucide-react";
-import Menubar2 from "@/components/sidebar/menubar"
+import Sidebar from "@/components/sidebar";
+import Menubar2 from "@/components/menubar"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,16 +16,16 @@ export default function RootLayout({
   return (
     <html lang="en">
        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-        <body className={inter.className}>
-        <Sidebar/>
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-        >
-          {children}
-        </ThemeProvider>
-        </body>
+       <body className={`${inter.className} bg-background`}>
+        <div className="sticky-sidebar">
+          <Sidebar/>
+        </div>
         <Menubar2/>
+        <div className="flex flex-col h-screen">
+          <CssBaseline />
+          {children}
+        </div>
+        </body>
       </AppRouterCacheProvider>
     </html>
   );
