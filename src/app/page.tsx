@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-import "./home.css"
+import "/src/styles/home.css";
 import Carousel from "@/components/carousel";
 /* import SearchIcon from '@mui/icons-material/Search'; */
 
