@@ -61,6 +61,7 @@ export default function Carousel() {
                 <h2 className="card-title no-wrap">Product</h2>
                 <p className="text-m margin-bottom">Price: $</p>
                 <p>ingredient 1, ingredient 2, ingredient 3, ...</p>
+                <textarea className="textarea" placeholder="Notes..."></textarea>
                 <div className="card-actions justify-end">
                   <button className="btn btn-accent btn-outline">Add to card</button>
                 </div>
