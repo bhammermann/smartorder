@@ -11,7 +11,7 @@ export default function Sidebar() {
           </div>
           <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-background rounded-box w-52">
             <li><a href="/">Homepage</a></li>
-            <li><a href="http://localhost:3000/products">Products</a></li>
+            <li><a href="/products">Products</a></li>
             <li><a href="/about">About</a></li>
           </ul>
         </div>

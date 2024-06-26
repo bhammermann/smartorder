@@ -1,7 +1,21 @@
 .menubar {
-    display: flex;
-    position: fixed;
-    bottom: 0;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-around;
+  background-color: white;
+  padding: 10px 0;
+}
+
+.main-content {
+  padding-bottom: 60px;
+}
+
+.btm-nav .text-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .first {
