@@ -7,7 +7,6 @@ import Carousel from "@/components/carousel";
 /* import SearchIcon from '@mui/icons-material/Search'; */
 
 
-
 export default function Home() {
   return (
     <div className="home">

@@ -1,8 +1,10 @@
+import Link from "next/link";
 import "/src/styles/menubar.css";
 
 export default function Menubar2() {
   return (
     <div className="menubar btm-nav bg-background">
+      <a href="/">
       <button className="text-primary">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -15,10 +17,12 @@ export default function Menubar2() {
             d="m219.31 108.68l-80-80a16 16 0 0 0-22.62 0l-80 80A15.87 15.87 0 0 0 32 120v96a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-56h32v56a8 8 0 0 0 8 8h64a8 8 0 0 0 8-8v-96a15.87 15.87 0 0 0-4.69-11.32M208 208h-48v-56a8 8 0 0 0-8-8h-48a8 8 0 0 0-8 8v56H48v-88l80-80l80 80Z"
           ></path>
         </svg>
-      </button>
+      </button></a>
+      
+      <a href="/cart">
       <button className="text-primary">
         <div className="indicator">
-          <span className="indicator-item badge badge-secondary">0</span>
+          <span className="indicator-item badge badge-secondary">{1}</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width={32}
@@ -31,7 +35,7 @@ export default function Menubar2() {
             ></path>
           </svg>
         </div>
-      </button>
+      </button></a>
     </div>
   );
 }

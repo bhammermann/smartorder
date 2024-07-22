@@ -1,5 +1,3 @@
-"use client"
-
 export default function About() {
     return (
         <div style={{ padding: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', textAlign: 'justify' }}>

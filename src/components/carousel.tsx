@@ -39,6 +39,15 @@ export default function Carousel() {
     };
   }, [selectedImage]);
 
+  const [count, setCount] = useState(0);
+
+  const handleButtonClick = () => {
+    setCount(count + 1);
+    return count;
+  };
+
+  
+
   return (
     <div>
  <div className="carousel carousel-center max-w-300 p-4 space-x-4 bg-background rounded-box">
@@ -63,7 +72,7 @@ export default function Carousel() {
                 <p>ingredient 1, ingredient 2, ingredient 3, ...</p>
                 <textarea className="textarea" placeholder="Notes..."></textarea>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-accent btn-outline">Add to card</button>
+                  <button className="btn btn-accent btn-outline" onClick={handleButtonClick}>Add to card</button>
                 </div>
               </div>
             </div>
