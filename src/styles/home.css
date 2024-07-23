@@ -6,3 +6,14 @@
 .search {
     width: 30%;
 }
+
+.center-text {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.bg-def {
+    background-color: white;
+    color: black;
+}
